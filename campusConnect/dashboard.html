@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CampusConnect Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>CampusConnect</h1>
+    <p>Welcome to your Student Dashboard</p>
+</header>
+
+<nav>
+    <a href="dashboard.html">Home</a>
+    <a href="notes.html">Notes</a>
+    <a href="books.html">Books</a>
+    <a href="food.html">Food</a>
+    <a href="rooms.html">Rooms</a>
+    <a href="contact.html">Contact</a>
+    <a href="#" onclick="logout()">Logout</a>
+</nav>
+
+<div class="container">
+
+    <div class="card">
+        <h2>Welcome </h2>
+        <p>
+            CampusConnect helps students access all campus services from one place.
+            Use the navigation menu to explore different services.
+        </p>
+    </div>
+
+    <div class="card-grid">
+
+        <div class="card">
+            <h3>📚 Books Marketplace</h3>
+            <p>Buy and sell second-hand books.</p>
+            <a href="books.html">
+                <button>Open</button>
+            </a>
+        </div>
+
+        <div class="card">
+            <h3>🍱 Food Services</h3>
+            <p>Discover nearby tiffin and food services.</p>
+            <a href="food.html">
+                <button>Open</button>
+            </a>
+        </div>
+
+        <div class="card">
+            <h3>🏠 Room Finder</h3>
+            <p>Find PGs, hostels and roommates.</p>
+            <a href="rooms.html">
+                <button>Open</button>
+            </a>
+        </div>
+
+        <div class="card">
+            <h3>📩 Contact</h3>
+            <p>Need help? Contact our support team.</p>
+            <a href="contact.html">
+                <button>Open</button>
+            </a>
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+function logout() {
+    localStorage.removeItem("token");
+    alert("Logged out successfully!");
+    window.location.href = "login.html";
+}
+</script>
+<script src="dashboard.js"></script>
+
+</body>
+</html>

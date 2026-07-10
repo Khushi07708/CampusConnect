@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusConnect | Room Finder</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="logo">
+        <span class="campus">Campus</span><span class="connect">Connect</span>
+    </div>
+
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="notes.html">Notes</a>
+        <a href="books.html">Books</a>
+        <a href="food.html">Food</a>
+        <a href="rooms.html" class="active">Rooms</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+</header>
+
+<section class="hero" style="min-height:40vh;">
+
+    <div class="hero-content">
+
+        <h2 class="room-title">🏠 Room Finder</h2>
+
+        <p>Find affordable rooms, PGs and roommates near your college.</p>
+
+    </div>
+
+</section>
+
+<div class="container">
+
+    <div class="card">
+
+        <h2>Add Room</h2>
+
+        <form id="roomForm">
+
+            <label>Location</label>
+            <input type="text" id="location" placeholder="Enter Location" required>
+
+            <label>Monthly Rent (₹)</label>
+            <input type="number" id="rent" placeholder="Enter Rent" required>
+
+            <label>Room Type</label>
+            <select id="roomType" required>
+                <option value="">Select Room Type</option>
+                <option>Single Sharing</option>
+                <option>Double Sharing</option>
+                <option>Triple Sharing</option>
+            </select>
+
+            <label>Furnished</label>
+            <select id="furnished" required>
+                <option value="">Select</option>
+                <option>Fully Furnished</option>
+                <option>Semi Furnished</option>
+                <option>Unfurnished</option>
+            </select>
+
+            <label>Contact Number</label>
+            <input type="text" id="contact" placeholder="Enter Contact Number" required>
+
+            <label>Description</label>
+            <textarea id="description" placeholder="Describe the room"></textarea>
+
+            <label>Room Image</label>
+            <input type="file" id="image">
+
+            <button type="submit" class="btn">
+                Add Room
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+<div class="container">
+
+    <input
+        type="text"
+        id="search"
+        placeholder="🔍 Search Rooms...">
+
+</div>
+
+<div class="container">
+
+    <h2>Available Rooms</h2>
+
+    <div id="roomContainer" class="card-grid">
+
+    </div>
+
+</div>
+
+<footer>
+
+    <h3>CampusConnect</h3>
+
+    <p>© 2026 CampusConnect. All Rights Reserved.</p>
+
+</footer>
+
+<script src="rooms.js"></script>
+
+</body>
+</html>

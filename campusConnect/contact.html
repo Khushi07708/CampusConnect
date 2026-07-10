@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - CampusConnect</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>📩 CampusConnect</h1>
+    <p>Contact & Support</p>
+</header>
+
+<nav>
+    <a href="dashboard.html">Home</a>
+    <a href="books.html">Books</a>
+    <a href="food.html">Food</a>
+    <a href="rooms.html">Rooms</a>
+    <a href="contact.html">Contact</a>
+    <a href="login.html">Logout</a>
+</nav>
+
+<div class="container contact-container">
+
+    <div class="card contact-card">
+        <h2>Contact Us</h2>
+
+        <form id="contactForm">
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Enter Your Name"
+                required
+            >
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Enter Your Email"
+                required
+            >
+
+            <input
+                type="text"
+                id="subject"
+                placeholder="Subject"
+                required
+            >
+
+            <textarea
+                id="message"
+                placeholder="Write Your Message..."
+                rows="6"
+                required
+            ></textarea>
+
+            <button type="submit">
+                Send Message
+            </button>
+
+        </form>
+    </div>
+
+    <br>
+
+    <div class="card contact-card">
+        <h2>CampusConnect Support</h2>
+
+        <p><strong>Email:</strong> support@campusconnect.com</p>
+
+        <p><strong>Phone:</strong> +91 9876543210</p>
+
+        <p><strong>Address:</strong> Bharati Vidyapeeth College of Engineering, Pune, Maharashtra</p>
+
+        <p><strong>Working Hours:</strong> Monday - Saturday (9:00 AM - 6:00 PM)</p>
+    </div>
+
+    <br>
+
+    <div class="card contact-card">
+        <h2>Frequently Asked Questions</h2>
+
+        <h4>How do I add a book?</h4>
+        <p>Open the Books page and fill in the details.</p>
+
+        <h4>How do I find a room?</h4>
+        <p>Visit the Rooms page to browse available listings.</p>
+
+        <h4>How can I contact support?</h4>
+        <p>Use this contact form or email us directly.</p>
+
+    </div>
+
+</div>
+
+<script src="js/contact.js"></script>
+
+</body>
+</html>

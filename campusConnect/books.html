@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusConnect | Books Marketplace</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+
+        <div class="logo">
+            <span class="campus">Campus</span><span class="connect">Connect</span>
+        </div>
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="notes.html">Notes</a>
+            <a href="books.html" class="active">Books</a>
+            <a href="food.html">Food</a>
+            <a href="rooms.html">Rooms</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+    </header>
+
+    <!-- Hero -->
+    <section class="hero" style="min-height:40vh;">
+
+        <div class="hero-content">
+
+            <h2>Books Marketplace 📚</h2>
+
+            <p>Buy and sell second-hand books with fellow students.</p>
+
+        </div>
+
+    </section>
+
+    <!-- Add Book -->
+    <div class="container">
+
+        <div class="card">
+
+            <h2>Add Book</h2>
+
+            <form id="bookForm">
+
+                <label>Book Title</label>
+                <input type="text" id="title" placeholder="Enter Book Title" required>
+
+                <label>Author</label>
+                <input type="text" id="author" placeholder="Author Name" required>
+
+                <label>Price (₹)</label>
+                <input type="number" id="price" placeholder="Enter Price" required>
+
+                <label>Condition</label>
+                <select id="condition" required>
+                    <option value="">Select Condition</option>
+                    <option>New</option>
+                    <option>Used</option>
+                </select>
+
+                <label>Description</label>
+                <textarea id="description" placeholder="Book Description"></textarea>
+
+                <label>Seller Name</label>
+                <input type="text" id="seller" placeholder="Seller Name" required>
+
+                <label>Contact Number</label>
+                <input type="text" id="contact" placeholder="Contact Number" required>
+
+                <label>Book Image</label>
+                <input type="file" id="image">
+
+                <button type="submit" class="btn">
+                    Add Book
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <!-- Search -->
+    <div class="container">
+
+        <input
+            type="text"
+            id="search"
+            placeholder="🔍 Search books by title or author...">
+
+    </div>
+
+    <!-- Books List -->
+    <div class="container">
+
+        <h2>Available Books</h2>
+
+        <div id="booksContainer" class="card-grid">
+
+            <!-- Books will be loaded here -->
+
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+
+        <h3>CampusConnect</h3>
+
+        <p>© 2026 CampusConnect. All Rights Reserved.</p>
+
+    </footer>
+
+    <script src="books.js"></script>
+
+</body>
+
+</html>

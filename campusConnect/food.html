@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusConnect | Food Services</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="logo">
+        <span class="campus">Campus</span><span class="connect">Connect</span>
+    </div>
+
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="notes.html">Notes</a>
+        <a href="books.html">Books</a>
+        <a href="food.html" class="active">Food</a>
+        <a href="rooms.html">Rooms</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+</header>
+
+<section class="hero" style="min-height:40vh;">
+
+    <div class="hero-content">
+
+        <h2 class="food-title">🍱 Food Services</h2>
+
+        <p>Find affordable tiffin and meal services near your campus.</p>
+
+    </div>
+
+</section>
+
+<div class="container">
+
+    <div class="card">
+
+        <h2>Add Food Service</h2>
+
+        <form id="foodForm">
+
+            <label>Service Name</label>
+            <input type="text" id="serviceName" placeholder="Enter Service Name" required>
+
+            <label>Food Type</label>
+            <select id="foodType" required>
+                <option value="">Select Type</option>
+                <option>Veg</option>
+                <option>Non-Veg</option>
+                <option>Veg & Non-Veg</option>
+            </select>
+
+            <label>Location</label>
+            <input type="text" id="location" placeholder="Enter Location" required>
+
+            <label>Monthly Price (₹)</label>
+            <input type="number" id="price" placeholder="Enter Monthly Price" required>
+
+            <label>Contact Number</label>
+            <input type="text" id="contact" placeholder="Enter Contact Number" required>
+
+            <label>Description</label>
+            <textarea id="description" placeholder="Describe the food service"></textarea>
+
+            <label>Upload Image</label>
+            <input type="file" id="image">
+
+            <button type="submit" class="btn">
+                Add Food Service
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+<div class="container">
+
+    <input
+        type="text"
+        id="search"
+        placeholder="🔍 Search Food Services...">
+
+</div>
+
+<div class="container">
+
+    <h2>Available Food Services</h2>
+
+    <div id="foodContainer" class="card-grid">
+
+    </div>
+
+</div>
+
+<footer>
+
+    <h3>CampusConnect</h3>
+
+    <p>© 2026 CampusConnect. All Rights Reserved.</p>
+
+</footer>
+
+<script src="food.js"></script>
+
+</body>
+</html>

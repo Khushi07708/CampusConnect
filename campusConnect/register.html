@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>CampusConnect | Register</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="auth-page">
+
+<div class="auth-container">
+
+<div class="auth-logo">
+<span class="campus">Campus</span><span class="connect">Connect</span>
+</div>
+
+<div class="auth-title">
+
+<h2>Create Account ✨</h2>
+
+<p>Join thousands of Campus students today</p>
+
+</div>
+
+<form id="registerForm" onsubmit="event.preventDefault(); register();">
+
+<input id="name" type="text" placeholder="👤 Full Name" required>
+
+<input id="email" type="email" placeholder="📧 Email Address" required>
+
+<input id="college" type="text" placeholder="🏫 College Name" required>
+
+<input id="password" type="password" placeholder="🔒 Password" required>
+
+<input id="confirmPassword" type="password" placeholder="🔒 Confirm Password" required>
+
+<button type="submit" class="auth-btn">
+Create Account
+</button>
+
+</form>
+
+<div class="divider">
+
+<span>OR</span>
+
+</div>
+
+<button class="google-btn">
+
+Continue with Google
+
+</button>
+
+<div class="auth-links">
+
+Already have an account?
+
+<a href="login.html">
+
+Login
+
+</a>
+
+</div>
+
+</div>
+<div class="back-btn">
+    <a href="index.html">← Back to Home</a>
+</div>
+<script src="register.js"></script>
+
+</body>
+
+</html>

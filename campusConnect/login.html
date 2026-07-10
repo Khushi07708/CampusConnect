@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>CampusConnect | Login</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="auth-page">
+
+<div class="auth-container">
+
+<div class="auth-logo">
+<span class="campus">Campus</span><span class="connect">Connect</span>
+</div>
+
+<div class="auth-title">
+<h2>Welcome Back 👋</h2>
+<p>Login to continue your Campus journey</p>
+</div>
+
+<form onsubmit="event.preventDefault();login();">
+
+<input id="email" type="email" placeholder="📧 Email Address" required>
+
+<input id="password" type="password" placeholder="🔒 Password" required>
+
+<div class="remember">
+
+<label>
+<input type="checkbox">
+Remember Me
+</label>
+
+<a href="#">Forgot Password?</a>
+
+</div>
+
+<button type="submit" class="auth-btn">
+Login
+</button>
+
+</form>
+
+<div class="divider">
+<span>OR</span>
+</div>
+
+<button class="google-btn">
+Continue with Google
+</button>
+
+<div class="auth-links">
+
+Don't have an account?
+
+<a href="register.html">
+Register Now
+</a>
+
+</div>
+
+</div>
+<div class="back-btn">
+    <a href="index.html">← Back to Home</a>
+</div>
+
+</body>
+<script src="login.js"></script>
+
+</html>

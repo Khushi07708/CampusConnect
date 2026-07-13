@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:5000";
+const BASE_URL = "https://campusconnect-dwrq.onrender.com";
 
 const contactForm = document.getElementById("contactForm");
 

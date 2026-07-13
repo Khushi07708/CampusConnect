@@ -1,5 +1,5 @@
 alert("register.js loaded");
-const BASE_URL = "http://localhost:5000";
+const BASE_URL = "https://campusconnect-dwrq.onrender.com";
 
 // Show / Hide Password
 function togglePassword() {

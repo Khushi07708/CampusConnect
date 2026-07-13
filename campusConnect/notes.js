@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:5000";
+const BASE_URL = "https://campusconnect-dwrq.onrender.com";
 
 const notesForm = document.getElementById("notesForm");
 const notesTable = document.querySelector("#notesTable tbody");
